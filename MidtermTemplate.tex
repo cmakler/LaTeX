@@ -3,15 +3,16 @@
 	\newenvironment{showInSolutions}{\begingroup \color{NavyBlue}}{\endgroup}
 	\newenvironment{mcbox}[3][15]{\begin{pspicture}(0, 0)\psframe[linecolor = NavyBlue](0, #2)(#1, #3)}{\end{pspicture}}
 	\title{Midterm: \partTitle{} Solutions}
+	\newcommand{\correctOption}{\item[\rlap{$\bigcirc$}\ \textcolor{NavyBlue}{$\bullet$}\ ]}
+	\newcommand{\incorrectOption}{\item [\rlap{$\bigcirc$}\ \textcolor{white}{$\bullet$}\ ]}
 \else
 	\excludecomment{floatInSolutions}
 	\excludecomment{showInSolutions}
 	\excludecomment{mcbox}
 	\title{Midterm: \partTitle{}}
+	\newcommand{\correctOption}{\item[$\bigcirc$]}
+	\newcommand{\incorrectOption}{\item[$\bigcirc$]}
 \fi
-
-\MakeOuterQuote{"}
-\DeclareMathOperator{\Lagr}{\mathcal{L}}
 
 \author{Stanford University | \course{} | \term{}}
 \date{\examDate{}}
