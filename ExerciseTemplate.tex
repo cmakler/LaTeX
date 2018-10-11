@@ -4,12 +4,20 @@
 	\newenvironment{showInSolutions}{\begingroup \color{NavyBlue}}{\endgroup}
 	\newenvironment{mcbox}[3][16]{\begin{pspicture}(0, 0)\psframe[linecolor = NavyBlue](0, #2)(#1, #3)}{\end{pspicture}}
 	\newcommand{\exercisesOrSolutions}{Solutions}
+	\newcommand{\correctOption}{\item[\rlap{$\bigcirc$}\hspace{0.035in}\textcolor{NavyBlue}{$\bullet$}\ ]}
+	\newcommand{\incorrectOption}{\item [\rlap{$\bigcirc$}\hspace{0.035in}\textcolor{white}{$\bullet$}\ ]}
+		\newcommand{\correctCheckbox}{\item[\rlap{$\square$}\ \textcolor{NavyBlue}{$\bullet$}\ ]}
+	\newcommand{\incorrectCheckbox}{\item [\rlap{$\square$}\ \textcolor{white}{$\bullet$}\ ]}
 \else
 	\excludecomment{answer}
 	\excludecomment{floatInSolutions}
 	\excludecomment{showInSolutions}
 	\excludecomment{mcbox}
 	\newcommand{\exercisesOrSolutions}{Exercises}
+	\newcommand{\correctOption}{\item[$\bigcirc$]}
+	\newcommand{\incorrectOption}{\item[$\bigcirc$]}
+	\newcommand{\correctCheckbox}{\item[$\square$]}
+	\newcommand{\incorrectCheckbox}{\item[$\square$]}
 \fi
 
 \title{Lecture \lectureNumber \ \exercisesOrSolutions{}: \topic{}}
