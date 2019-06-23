@@ -8,7 +8,10 @@
 	\newcommand{\incorrectOption}{\item [\rlap{$\bigcirc$}\hspace{0.035in}\textcolor{white}{$\bullet$}\ ]}
 		\newcommand{\correctCheckbox}{\item[\rlap{$\square$}\ \textcolor{NavyBlue}{$\bullet$}\ ]}
 	\newcommand{\incorrectCheckbox}{\item [\rlap{$\square$}\ \textcolor{white}{$\bullet$}\ ]}
+	\excludecomment{setup}
+	
 \else
+	\newenvironment{setup}{}
 	\excludecomment{answer}
 	\excludecomment{floatInSolutions}
 	\excludecomment{showInSolutions}

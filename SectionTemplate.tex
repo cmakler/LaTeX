@@ -4,12 +4,16 @@
 	\newenvironment{showInSolutions}{\begingroup \color{NavyBlue}}{\endgroup}
 	\newenvironment{mcbox}[3][16]{\begin{pspicture}(0, 0)\psframe[linecolor = NavyBlue](0, #2)(#1, #3)}{\end{pspicture}}
 	\newcommand{\exercisesOrSolutions}{Solutions}
+		\newcommand{\correctOption}{\item[\rlap{$\bigcirc$}\ \textcolor{NavyBlue}{$\bullet$}\ ]}
+	\newcommand{\incorrectOption}{\item [\rlap{$\bigcirc$}\ \textcolor{white}{$\bullet$}\ ]}
 \else
 	\excludecomment{answer}
 	\excludecomment{floatInSolutions}
 	\excludecomment{showInSolutions}
 	\excludecomment{mcbox}
 	\newcommand{\exercisesOrSolutions}{Exercises}
+		\newcommand{\correctOption}{\item[$\bigcirc$]}
+	\newcommand{\incorrectOption}{\item[$\bigcirc$]}
 \fi
 
 \title{Section \lectureNumber \ \exercisesOrSolutions{}: \topic{}}
